@@ -1,0 +1,101 @@
+.wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 10vh;
+  z-index: 99;
+
+  a {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  background-color: #1a1a1a;
+  height: 10vh;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-img {
+  width: 60%;
+}
+
+.search-input {
+  border-radius: 30px;
+  width: 27rem;
+  height: 3.2rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  background-color: #222222;
+  color: white;
+  font-style: italic;
+}
+
+.nav-tools {
+  display: flex;
+  width: 35%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 5rem;
+}
+
+.nav-tools > * {
+  font-size: 2.85rem;
+  color: white;
+}
+
+.nav-user {
+  margin-right: 4rem;
+}
+
+/* Header.module.scss */
+
+.bar {
+  color: white;
+  position: relative;
+  /* Add any other styles you need for the bar element */
+
+  .suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add any other styles you need for the suggestions element */
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+          color: beige;
+        }
+      }
+    }
+  }
+}
